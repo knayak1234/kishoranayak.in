@@ -1,0 +1,234 @@
+<html><head><base href="https://professor-website.edu/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Kishora Nayak | Professor of Quantum Physics</title>
+<style>
+  :root {
+    --primary-color: #1a237e;
+    --secondary-color: #ffd54f;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .publications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .publication {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .publication:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="particles" id="particles-js"></div>
+    <h1>Dr. Kishora Nayak</h1>
+    <p>Professor of Quantum Physics</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+  <section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <p>Welcome to my academic website. I am Dr. Kishora Nayak, a Professor of Quantum Physics at Quantum University. My research focuses on quantum entanglement and its applications in quantum computing and cryptography.</p>
+      </div>
+      <div>
+  <img src="https://example.com/dr-kishora-nayak.jpg" alt="Portrait of Dr. Kishora Nayak in a laboratory setting" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+    </div>
+  </section>
+    
+  <section id="research">
+    <h2>Current Research</h2>
+    <ul>
+      <li>Quantum Entanglement in Multi-Particle Systems</li>
+      <li>Quantum Error Correction in Noisy Intermediate-Scale Quantum (NISQ) Devices</li>
+      <li>Quantum Cryptography Protocols for Secure Communication</li>
+    </ul>
+  </section>
+    
+  <section id="publications">
+    <h2>Recent Publications</h2>
+    <div class="publications">
+      <div class="publication">
+        <h3>Entanglement Dynamics in Quantum Networks</h3>
+        <p>Published in Nature Physics, 2023</p>
+      </div>
+      <div class="publication">
+        <h3>Quantum Key Distribution: A Novel Approach</h3>
+        <p>Published in Physical Review Letters, 2022</p>
+      </div>
+      <div class="publication">
+        <h3>Error Mitigation in NISQ Computers</h3>
+        <p>Published in Quantum, 2022</p>
+      </div>
+    </div>
+  </section>
+    
+  <section id="teaching">
+    <h2>Courses</h2>
+    <ul>
+      <li>PHYS 401: Advanced Quantum Mechanics</li>
+      <li>PHYS 315: Introduction to Quantum Computing</li>
+      <li>PHYS 220: Modern Physics</li>
+    </ul>
+  </section>
+    
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:knayak@quantum.edu">knayak@quantum.edu</a></p>
+    <p>Office: Science Building, Room 301</p>
+    <p>Phone: (555) 123-4567</p>
+  </section>
+</main>
+  
+  <footer>
+    <p>© 2023 Dr. Kishora Nayak. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body></html>
